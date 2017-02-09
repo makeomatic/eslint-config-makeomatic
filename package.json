@@ -4,7 +4,8 @@
   "description": "Makeomatic base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint .",
+    "postversion": "git push && npm publish && git push --tags"
   },
   "repository": {
     "type": "git",
