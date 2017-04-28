@@ -1,5 +1,7 @@
 # Makeomatic Javascript Linting Configuration
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/makeomatic/eslint-config-makeomatic.svg)](https://greenkeeper.io/)
+
 Helps to ensure consistent styling between Makeomatic's projects
 
 ## Installing
