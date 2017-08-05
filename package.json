@@ -26,12 +26,18 @@
   },
   "homepage": "https://github.com/makeomatic/eslint-config-makeomatic#readme",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.1.0"
+    "eslint-config-airbnb-base": "^11.3.1"
   },
   "peerDependencies": {
-    "eslint": "^3.15.0",
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.0.0 || ^3.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "babel-eslint": "^7.1.1"
+    "eslint-plugin-promise": "^3.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.5.0"
   }
 }
