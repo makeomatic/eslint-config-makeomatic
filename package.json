@@ -1,11 +1,13 @@
 {
   "name": "eslint-config-makeomatic",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Makeomatic base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "test": "eslint .",
-    "postversion": "git push && npm publish && git push --tags"
+    "semantic-release": "semantic-release",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "preparecommitmsg": "./node_modules/@makeomatic/deploy/git-hooks/prepare-commit-msg $GIT_PARAMS"
   },
   "repository": {
     "type": "git",
@@ -26,18 +28,12 @@
   },
   "homepage": "https://github.com/makeomatic/eslint-config-makeomatic#readme",
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0"
-  },
-  "peerDependencies": {
-    "babel-eslint": "7.x.x || 8.x.x",
-    "eslint": "4.x.x",
+    "eslint-config-airbnb-base": "13.x.x",
     "eslint-plugin-import": "2.x.x",
-    "eslint-plugin-promise": "3.x.x"
+    "eslint-plugin-promise": "3.x.x",
+    "eslint": "5.x.x"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.3",
-    "eslint": "^4.13.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-promise": "^3.6.0"
+    "@makeomatic/deploy": "^7.0.0"
   }
 }
