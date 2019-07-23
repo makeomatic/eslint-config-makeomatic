@@ -28,14 +28,20 @@
   },
   "homepage": "https://github.com/makeomatic/eslint-config-makeomatic#readme",
   "dependencies": {
-    "eslint": "5.x.x",
-    "eslint-config-airbnb-base": "13.x.x",
-    "eslint-plugin-import": "2.x.x",
-    "eslint-plugin-promise": "3.x.x"
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-promise": "4.2.1"
   },
   "devDependencies": {
-    "@makeomatic/deploy": "^7.0.0",
-    "babel-plugin-istanbul": "^4.1.6",
+    "@makeomatic/deploy": "^8.4.5",
+    "babel-plugin-istanbul": "^5.2.0",
     "cross-env": "^5.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "./node_modules/@makeomatic/deploy/git-hooks/prepare-commit-msg $HUSKY_GIT_PARAMS"
+    }
   }
 }
