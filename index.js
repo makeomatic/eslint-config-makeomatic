@@ -34,7 +34,7 @@ module.exports = {
     }],
   },
   parserOptions: {
-    ecmaVersion: 7
+    ecmaVersion: 2018
   },
   plugins: [
     'promise',
