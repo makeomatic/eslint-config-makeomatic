@@ -32,12 +32,14 @@ module.exports = {
       selector: 'WithStatement',
       message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
     }],
+    'unicorn/filename-case': ['error', { case: 'kebabCase' }],
   },
   parserOptions: {
     ecmaVersion: 2018
   },
   plugins: [
     'promise',
-    'import'
+    'import',
+    'unicorn'
   ],
 };
