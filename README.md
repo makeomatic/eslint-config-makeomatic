@@ -4,7 +4,7 @@ Helps to ensure consistent styling between Makeomatic's projects
 
 ## Installing
 
-`npm i eslint eslint-config-makeomatic eslint-plugin-import eslint-plugin-promise babel-eslint -D`
+`npm i eslint eslint-config-makeomatic eslint-plugin-import eslint-plugin-promise -D`
 
 ## Default .eslintrc
 
