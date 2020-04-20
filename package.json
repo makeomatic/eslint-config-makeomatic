@@ -4,7 +4,9 @@
   "description": "Makeomatic base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "test": "eslint .",
+    "test": "yarn eslint:js && yarn eslint:ts",
+    "eslint:js": "eslint ./tests",
+    "eslint:ts": "eslint --ext .ts ./tests -c ./typescript.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -26,21 +28,28 @@
   },
   "homepage": "https://github.com/makeomatic/eslint-config-makeomatic#readme",
   "dependencies": {
-    "eslint": "6.5.1",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-unicorn": "^12.1.0"
+    "eslint-plugin-unicorn": "^18.0.1"
   },
   "devDependencies": {
-    "@makeomatic/deploy": "^9.3.2",
-    "babel-plugin-istanbul": "^5.2.0",
-    "cross-env": "^6.0.3"
+    "@makeomatic/deploy": "^10.1.4",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cross-env": "^7.0.2",
+    "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
       "prepare-commit-msg": "./node_modules/@makeomatic/deploy/git-hooks/prepare-commit-msg $HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "files": [
+    "index.js",
+    "typescript.js"
+  ]
 }

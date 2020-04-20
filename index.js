@@ -35,7 +35,7 @@ module.exports = {
     'unicorn/filename-case': ['error', { case: 'kebabCase' }],
   },
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2019
   },
   plugins: [
     'promise',
