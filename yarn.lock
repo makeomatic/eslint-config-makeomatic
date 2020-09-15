@@ -333,7 +333,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@hapi/address@^4.0.1":
+"@hapi/address@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-4.1.0.tgz#d60c5c0d930e77456fdcde2598e77302e2955e1d"
   integrity sha512-SkszZf13HVgGmChdHo/PxchnSaCJ6cetVqLzyciudzZRT0jcOouIF/Q93mgjw8cce+D+4F4C1Z/WrfFN+O3VHQ==
@@ -349,17 +349,6 @@
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.0.tgz#6c9eafc78c1529248f8f4d92b0799a712b6052c6"
   integrity sha512-i9YbZPN3QgfighY/1X1Pu118VUz2Fmmhd6b2n0/O8YVgGGfw0FbUYoA97k7FkpGJ+pLCFEDLUmAPPV4D1kpeFw==
-
-"@hapi/joi@17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-17.1.1.tgz#9cc8d7e2c2213d1e46708c6260184b447c661350"
-  integrity sha512-p4DKeZAoeZW4g3u7ZeRo+vCDuSDgSvtsB/NpfjXEHTUjSeINAi/RrVOWiVQ1isaoLzMvFEhe8n5065mQq1AdQg==
-  dependencies:
-    "@hapi/address" "^4.0.1"
-    "@hapi/formula" "^2.0.0"
-    "@hapi/hoek" "^9.0.0"
-    "@hapi/pinpoint" "^2.0.0"
-    "@hapi/topo" "^5.0.0"
 
 "@hapi/pinpoint@^2.0.0":
   version "2.0.0"
@@ -398,14 +387,14 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@makeomatic/confidence@6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@makeomatic/confidence/-/confidence-6.0.2.tgz#d69dcc381bac00a0ce6802a3de9b9cfe08ce9d7b"
-  integrity sha512-N5wsPgUqNJP0hp/J4WYawUT8gGAq4lXuSw2otHylSsyrrk0z8/kccZoW40YxpJBsGhH3RXSD+TP7E2OtuUBong==
+"@makeomatic/confidence@6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@makeomatic/confidence/-/confidence-6.0.3.tgz#4d149e10e523d551fb69f8334fcbc2ec06031af3"
+  integrity sha512-vpuT42SVtCWqjyJjmmOq4VGRvFxnGBogy4eIeSl2JqP8P0RCS8PyfTPV7iiowTcxm3WJ3RWqaxxz9bXwTNM4fQ==
   dependencies:
     "@hapi/hoek" "9.1.0"
-    "@hapi/joi" "17.1.1"
     alce "1.x.x"
+    joi "^17.2.1"
     yargs "16.0.3"
 
 "@makeomatic/deploy@^10.3.0":
@@ -3162,6 +3151,17 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
+joi@^17.2.1:
+  version "17.2.1"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.2.1.tgz#e5140fdf07e8fecf9bc977c2832d1bdb1e3f2a0a"
+  integrity sha512-YT3/4Ln+5YRpacdmfEfrrKh50/kkgX3LgBltjqnlMPIYiZ4hxXZuVJcxmsvxsdeHg9soZfE3qXxHC2tMpCCBOA==
+  dependencies:
+    "@hapi/address" "^4.1.0"
+    "@hapi/formula" "^2.0.0"
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/pinpoint" "^2.0.0"
+    "@hapi/topo" "^5.0.0"
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -3902,11 +3902,11 @@ move-concurrently@^1.0.1:
     run-queue "^1.0.3"
 
 ms-conf@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/ms-conf/-/ms-conf-7.0.1.tgz#04021dc2347949481dd8db0d63ae7385487798b5"
-  integrity sha512-V/C7vjc6enH2MeLBcK+KRY7f81I2a3TAizTqlwblJkS5nEX4wLnt0G4P0+86CAxea2q+zNmFsrn9uBHsKnY8iQ==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/ms-conf/-/ms-conf-7.0.2.tgz#8f46cdeef324ed578d3e4d5da14ab126029d4c4d"
+  integrity sha512-Bg/gDNluzJp9ElOx5C6qmpInFCZ6awLGsOoHKmbt5d6Nuuoiyc77mKzj+h11sTf7q/jF5MVx6zw3lcQOOXMbgA==
   dependencies:
-    "@makeomatic/confidence" "6.0.2"
+    "@makeomatic/confidence" "6.0.3"
     camelcase "^6.0.0"
     debug "^4.1.0"
     dotenv "^8.2.0"

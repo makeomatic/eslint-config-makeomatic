@@ -12,7 +12,6 @@ module.exports = {
     'promise/param-names': 2,
     'promise/always-return': 2,
     'promise/catch-or-return': 2,
-    'promise/no-native': 2,
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
