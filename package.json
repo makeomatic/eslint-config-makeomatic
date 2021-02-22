@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/makeomatic/eslint-config-makeomatic#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
-    "eslint": "7.9.0",
-    "eslint-config-airbnb-base": "14.2.0",
-    "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-unicorn": "^21.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "7.20.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-unicorn": "^28.0.2"
   },
   "devDependencies": {
-    "@makeomatic/deploy": "^10.3.0",
+    "@makeomatic/deploy": "^10.3.3",
     "babel-plugin-istanbul": "^6.0.0",
-    "cross-env": "^7.0.2",
-    "typescript": "^4.0.2"
+    "cross-env": "^7.0.3",
+    "typescript": "^4.1.5"
   },
   "husky": {
     "hooks": {
