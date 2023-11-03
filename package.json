@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeomatic",
-  "version": "3.0.0",
+  "version": "6.0.0",
   "description": "Makeomatic base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
